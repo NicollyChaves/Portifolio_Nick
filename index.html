@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="#home" class="logo">Portfólio</a>
+
+        <nav class="navbar">
+            <a href="#home" style="--i:1">Home</a>
+            <a href="#about" style="--i:2">Sobre</a>
+            <a href="#certifications" style="--i:3">Certificados</a>
+            <a href="#skills" style="--i:4">Skills</a>
+            <a href="#projects" style="--i:5">Projetos</a>
+            <a href="#contact" style="--i:6">Contato</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Olá, eu sou</h3>
+            <h1>Nicolly Chaves</h1>
+            <h3>e sou <span id="texto-dinamico"></span></h3>
+            <p>Uma profissional em formação em TI, com experiência em DSA e SIEM, focada em análise de dados, segurança
+                da informação e aprendizado contínuo.</p>
+
+            <div class="home-sci">
+                <a href="https://www.linkedin.com/in/nicolly-chaves-11136927a/" target="_blank" style="--i:6">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+
+                <a href="https://github.com/NicollyChaves" target="_blank" style="--i:7">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+
+            <a href="#about" class="btn-box">Mais sobre mim</a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="./assets/imagem/Portifolio.png" alt="">
+        </div>
+        <div class="about-text">
+            <h2>Sobre <span>Mim</span></h2>
+            <h4>Full Stack Developer</h4>
+            <p>Sou apaixonada por tecnologia e por aprender coisas novas todos os dias
+                Gosto muito de design, de criar protótipos e de transformar ideias em algo visual, funcional e cheio de
+                significado. Me empolgo com processos criativos, testes, melhorias e tudo aquilo que faz um projeto
+                evoluir.
+                Estou sempre em busca de crescimento, tanto no front-end quanto no back-end, explorando novas
+                tecnologias, desafios e formas de fazer melhor. Aprender, me desenvolver e sair da zona de conforto é o
+                que mais me motiva.
+                Tenho conhecimentos em Java, JavaScript, Python, HTML, CSS e SQL, gosto de trabalhar em equipe e
+                acredito muito na troca de experiências. Sou curiosa, dedicada e movida por desafios, com muita vontade
+                de evoluir cada vez mais na área de tecnologia e segurança da informação</p>
+            <a href="./assets/imagem/pdf/Nicolly Chaves .pdf" class="btn-box" download="">Download Currículo</a>
+        </div>
+    </section>
+
+    <section class="projects" id="certifications">
+        <div class="container">
+            <h1 class="sub-title">Meus <span>Certificados</span></h1>
+            <div class="projects-list">
+                <div>
+                    <i class="fa-solid fa-code" style="color: #c703ff;"></i>
+                    <h2>Yellow Belt</h2>
+                    <p>Certificação focada na melhoria contínua de processos, análise de problemas e aplicação do método
+                        DMAIC.</p>
+                    <a href="#" class="read" onclick="openModal('./assets/imagem/Yellow_Belt.png')">Saiba mais</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-screwdriver-wrench" style="color: #c703ff;"></i>
+                    <h2>Splunk Fundamentos I</h2>
+                    <p>Certificação voltada à análise de logs, buscas, dashboards e fundamentos da plataforma Splunk.
+                    </p>
+                    <a href="#" class="read" onclick="openModal('./assets/imagem/Splunk.png')">Saiba mais</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-rocket" style="color: #c703ff;"></i>
+                    <h2>Python</h2>
+                    <p>Certificação em lógica de programação, automação e desenvolvimento utilizando a linguagem Python.
+                    </p>
+                    <a href="#" class="read" onclick="openModal('./assets/imagem/Python.png')">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <h1 class="sub-title">Minhas <span>Skills</span></h1>
+
+    <section class="skills" id="skills">
+        <div class="container1" id="Skills">
+            <h1 class="heading1">Hard Skills</h1>
+            <div class="tecnica-bars">
+
+                <div class="bar">
+                    <div class="info">
+                        <i class="fa-solid fa-magnifying-glass-chart" style="color: #fff;"></i>
+                        <span>ANÁLISE DE LOGS</span>
+                    </div>
+                    <div class="progresse-line logs">
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="bar">
+                    <div class="info">
+                        <i class="fa-solid fa-layer-group" style="color: #fff;"></i>
+                        <span>CRIAÇÃO DE LAYOUTS</span>
+                    </div>
+                    <div class="progresse-line layouts">
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="bar">
+                    <div class="info">
+                        <i class="fa-brands fa-css3-alt" style="color: #fff;"></i>
+                        <span>CSS</span>
+                    </div>
+                    <div class="progresse-line css">
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="bar">
+                    <div class="info">
+                        <i class="fa-brands fa-html5" style="color: #fff;"></i>
+                        <span>HTML</span>
+                    </div>
+                    <div class="progresse-line html">
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="bar">
+                    <div class="info">
+                        <i class="fa-brands fa-java" style="color: #fff;"></i>
+                        <span>JAVA</span>
+                    </div>
+                    <div class="progresse-line java">
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="bar">
+                    <div class="info">
+                        <i class="fa-brands fa-js" style="color: #fff;"></i>
+                        <span>JAVASCRIPT</span>
+                    </div>
+                    <div class="progresse-line javascript">
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="bar">
+                    <div class="info">
+                        <i class="fa-solid fa-shield-halved" style="color: #fff;"></i>
+                        <span>MITRE ATT&CK</span>
+                    </div>
+                    <div class="progresse-line mitre">
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="bar">
+                    <div class="info">
+                        <i class="fa-brands fa-node-js" style="color: #fff;"></i>
+                        <span>NODE.JS</span>
+                    </div>
+                    <div class="progresse-line node">
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="bar">
+                    <div class="info">
+                        <i class="fa-brands fa-python" style="color: #fff;"></i>
+                        <span>PYTHON</span>
+                    </div>
+                    <div class="progresse-line python">
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="bar">
+                    <div class="info">
+                        <i class="fa-brands fa-react" style="color: #fff;"></i>
+                        <span>REACT</span>
+                    </div>
+                    <div class="progresse-line react">
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="bar">
+                    <div class="info">
+                        <i class="fa-brands fa-react" style="color: #fff;"></i>
+                        <span>REACT-NATIVE</span>
+                    </div>
+                    <div class="progresse-line native">
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="bar">
+                    <div class="info">
+                        <i class="fa-solid fa-database" style="color: #fff;"></i>
+                        <span>SQL</span>
+                    </div>
+                    <div class="progresse-line sql">
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="bar">
+                    <div class="info">
+                        <i class="fa-solid fa-palette" style="color: #fff;"></i>
+                        <span>UI</span>
+                    </div>
+                    <div class="progresse-line ui">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container1">
+            <h1 class="heading1">Soft Skills</h1>
+
+            <div class="radials-bars">
+
+                <div class="radial-bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+                    </svg>
+                    <div class="porcentagem">80%</div>
+                    <div class="text">Comunicação</div>
+                </div>
+
+                <div class="radial-bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-2" cx="100" cy="100" r="80"></circle>
+                    </svg>
+                    <div class="porcentagem">85%</div>
+                    <div class="text">Escuta ativa</div>
+                </div>
+
+                <div class="radial-bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-3" cx="100" cy="100" r="80"></circle>
+                    </svg>
+                    <div class="porcentagem">85%</div>
+                    <div class="text">Trabalho em equipe</div>
+                </div>
+
+                <div class="radial-bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-4" cx="100" cy="100" r="80"></circle>
+                    </svg>
+                    <div class="porcentagem">75%</div>
+                    <div class="text">Proatividade</div>
+                </div>
+
+                <div class="radial-bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-5" cx="100" cy="100" r="80"></circle>
+                    </svg>
+                    <div class="porcentagem">90%</div>
+                    <div class="text">Curiosidade</div>
+                </div>
+
+                <div class="radial-bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-6" cx="100" cy="100" r="80"></circle>
+                    </svg>
+                    <div class="porcentagem">80%</div>
+                    <div class="text">Pensamento crítico</div>
+                </div>
+
+                <div class="radial-bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-7" cx="100" cy="100" r="80"></circle>
+                    </svg>
+                    <div class="porcentagem">85%</div>
+                    <div class="text">Aprendizado rápido</div>
+                </div>
+
+                <div class="radial-bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-8" cx="100" cy="100" r="80"></circle>
+                    </svg>
+                    <div class="porcentagem">90%</div>
+                    <div class="text">Desenvolvimento contínuo</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="projetos" id="projects">
+        <div id="Portifolio" id="project">
+            <div class="main-text" id="project">
+                <h2>Meus <span>Projetos</span></h2>
+
+                <div class="portfolio-content">
+
+                    <div class="row">
+                        <img src="./assets/imagem/Projeto_1.png" alt="">
+                        <div class="layer">
+                            <h5>Cyber Point</h5>
+                            <p>Aplicação web para gerenciamento de contatos, com login seguro e funcionalidades de
+                                cadastro, edição e exclusão.</p>
+                            <a href="https://cyber-point-tdd.vercel.app/"><i
+                                    class="fa-solid fa-arrow-up-right-from-square" style="color: #fff;"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <img src="./assets/imagem/Projeto_3.png" alt="">
+                        <div class="layer">
+                            <h5>Zync</h5>
+                            <p>Projeto interdisciplinar de impacto social que resultou na criação de um site educativo
+                                para jovens de 15 a 19 anos, com conteúdos práticos sobre vida adulta e cidadania.</p>
+                            <a href="https://nicollychaves.github.io/Zync/"><i
+                                    class="fa-solid fa-arrow-up-right-from-square" style="color: #fff;"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <img src="./assets/imagem/Projeto_2.png" alt="">
+                        <div class="layer">
+                            <h5>Wishy</h5>
+                            <p>Jogo educativo desenvolvido para auxiliar crianças de 6 a 8 anos focado no
+                                desenvolvimento cognitivo e no aprendizado básico de forma lúdica.</p>
+                            <a href="https://wishy-kappa.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"
+                                    style="color: #fff;"></i></a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+
+        <div class="contact-text">
+            <h2>Entre em <span>Contato</span></h2>
+            <h4>Vamos trabalhar juntos.</h4>
+            <p>
+                Se você tem interesse em conhecer melhor meu trabalho, conversar sobre projetos ou oportunidades na área
+                de tecnologia, fique à vontade para entrar em contato comigo. <br> Será um prazer conversar com você!
+            </p>
+
+            <div class="contact-icons">
+                <a href="https://www.linkedin.com/in/nicolly-chaves-11136927a/" target="_blank" style="--i:8">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+
+                <a href="https://github.com/NicollyChaves" target="_blank" style="--i:9">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <form method="post" id="contact_form">
+                <input type="text" placeholder="Nome" id="name" required>
+                <input type="email" placeholder="E-mail" id="email" required>
+                <input type="text" placeholder="Assunto" id="subject" required>
+                <textarea cols="40" rows="10" placeholder="Escreva a sua mensagem" id="message"></textarea>
+                <input type="submit" value="Enviar" class="send" id="button_form">
+            </form>
+        </div>
+
+    </section>
+
+
+    <div class="last-text">
+        <p>Sou movida pela curiosidade, aprendizado e vontade de criar soluções. © 2026 Desenvolvido por Nicolly Chaves
+        </p>
+    </div>
+    <a href="#home" class="top"><i class="fa-solid fa-arrow-up"></i></a>
+
+    <!-- MODAL CERTIFICADOS -->
+    <div id="certificateModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modalImage" class="modal-content">
+    </div>
+
+
+    <script src="./assets/js/script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+</body>
+
+</html>
