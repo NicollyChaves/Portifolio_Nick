@@ -20,6 +20,7 @@ A proposta é demonstrar minha evolução na área de desenvolvimento e meu inte
 - JavaScript  
 - EmailJS (formulário de contato)  
 - Font Awesome  
+- Vercel  
 
 ---
 
